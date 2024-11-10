@@ -1,0 +1,1 @@
+function Product({title}) { return <div>{title}</div> }
