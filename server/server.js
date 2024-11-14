@@ -10,7 +10,14 @@ app.use(cors());
 app.use(express.json());
 
 const authRouter = require('./routes/auth');
-app.use('/api/auth', authRouter);
+const productRouter = require('./routes/products');
+const orderRouter = require('./routes/orders');
 
-app.get('/', (req, res) => res.status(200).send('Amazon API Running'));
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true });
+
+app.use('/api/auth', authRouter);
+app.use('/api/products', productRouter);
+app.use('/api/orders', orderRouter);
+
 app.listen(port, () => console.log(`Listening on localhost:${port}`));
+// Cleaned
