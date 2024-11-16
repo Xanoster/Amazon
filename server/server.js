@@ -20,4 +20,3 @@ app.use('/api/products', productRouter);
 app.use('/api/orders', orderRouter);
 
 app.listen(port, () => console.log(`Listening on localhost:${port}`));
-// Cleaned
