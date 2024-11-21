@@ -8,7 +8,11 @@ Full-stack e-commerce application replicating core functionalities of Amazon.
 - **Payments:** Stripe API
 
 ## Features
-
+- User Authentication (JWT)
+- Product Listing & Search
+- Shopping Cart logic
+- Stripe Payment Integration
+- Order History
 
 ## Setup
 1. `cd server && npm install`
