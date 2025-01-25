@@ -1,1 +1,7 @@
-:root { --bg: #fff; }
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+.header.dark-mode {
+  background-color: #000;
+}
